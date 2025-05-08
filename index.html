@@ -1,0 +1,167 @@
+<!doctype html>
+<html ⚡ lang="id">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>Berita Hari Ini - Portal Berita Terkini</title>
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  
+  <!-- AMP Components -->
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  
+  <style amp-custom>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #e74c3c;
+      --text-color: #333;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+    
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #f8f9fa;
+    }
+    
+    .nav-item {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .featured-article {
+      margin: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    
+    .article-card {
+      border: 1px solid #eee;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .article-content {
+      padding: 1rem;
+    }
+    
+    .article-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .article-title {
+      color: var(--secondary-color);
+      margin: 0.5rem 0;
+    }
+    
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+</head>
+<body>
+  <header>
+    <h1>Berita Hari Ini</h1>
+    <p>Portal Berita Terpercaya</p>
+  </header>
+
+  <nav class="nav-container">
+    <a href="#home" class="nav-item">Beranda</a>
+    <a href="#politik" class="nav-item">Politik</a>
+    <a href="#ekonomi" class="nav-item">Ekonomi</a>
+    <a href="#olahraga" class="nav-item">Olahraga</a>
+  </nav>
+
+  <main>
+    <article class="featured-article">
+      <amp-img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          width="1200"
+          height="675"
+          layout="responsive"
+          alt="Gelaran Tech Expo 2024">
+          <div fallback>Gambar tidak dapat dimuat</div>
+      </amp-img>
+      <div class="article-content">
+        <h2 class="article-title">Gelaran Tech Expo 2024 Catatkan Rekor Pengunjung</h2>
+        <div class="meta">Kategori: Teknologi | Tanggal: 15 Maret 2024</div>
+        <p>Pameran teknologi terbesar se-Asia Tenggara, Tech Expo 2024, berhasil menarik lebih dari 500 ribu pengunjung selama 5 hari penyelenggaraan. Event yang digelar di Jakarta International Expo ini menampilkan berbagai inovasi terbaru di bidang teknologi...</p>
+        <a href="#full-article">Baca Selengkapnya</a>
+      </div>
+    </article>
+
+    <section class="article-grid">
+      <article class="article-card">
+        <amp-img src="https://images.unsplash.com/photo-1579952363872-3f08622496c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            width="400"
+            height="225"
+            layout="responsive"
+            alt="Pertandingan Sepak Bola">
+        </amp-img>
+        <div class="article-content">
+          <h3 class="article-title">Timnas U-23 Siap Hadapi Kualifikasi Piala Asia</h3>
+          <div class="meta">Olahraga | 14 Maret 2024</div>
+          <p>Pelatih Shin Tae-yong menyatakan kesiapan timnya menghadapi laga krusial melawan Australia pekan depan...</p>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <amp-img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            width="400"
+            height="225"
+            layout="responsive"
+            alt="Grafik Ekonomi">
+        </amp-img>
+        <div class="article-content">
+          <h3 class="article-title">BI Prediksi Pertumbuhan Ekonomi 2024 Capai 5.2%</h3>
+          <div class="meta">Ekonomi | 14 Maret 2024</div>
+          <p>Bank Indonesia menyampaikan proyeksi optimis pertumbuhan ekonomi nasional di tengah kondisi global yang masih fluktuatif...</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Berita Hari Ini - All Rights Reserved</p>
+    <p>Redaksi | Tentang Kami | Pedoman Media Siber</p>
+  </footer>
+</body>
+</html>
